@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <title>Google</title>
 </head>
 <body>
@@ -30,9 +31,19 @@
         </header>
         <main>
             <picture>
-                <img src="assets/images/logo.gif" alt="Google">                
+                <img class="logo" src="assets/images/logo.gif" alt="Google">                
             </picture>
-            <input type="text" name="pesquisar" id="pesquisar">
+            <div class="campoPesquisa">
+                <div class="inicio">
+                    <span><i class="fas fa-search"></i></span>
+                </div>                
+                <input type="text" name="pesquisar" id="pesquisar">
+                <div class="final">
+                    <span><i class="fas fa-times"></i></span>
+                    <span><i class="fas fa-keyboard"></i></span>
+                    <span><i class="fas fa-microphone"></i></span>
+                </div>     
+            </div>                
             <div class="row">
                 <button>Pesquisa Google</button>
                 <button>Sinto-me com sorte</button>                
