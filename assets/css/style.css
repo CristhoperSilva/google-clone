@@ -60,6 +60,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 13px;
 }
 main .logo{
     width: 375px;
@@ -70,7 +71,8 @@ main .logo{
     width: 582px;
     height: 44px;
     flex-direction: row;
-    margin-top: 40px;
+    justify-content: space-around;
+    margin-top: 30px;
     align-items: center;
     border: 1px solid #dfe1e5; 
     border-radius: 34px;   
@@ -85,19 +87,75 @@ main .logo{
     outline: none;
 }
 .campoPesquisa .final{
-    justify-content: right;
+    display: flex;
+    justify-content: space-between;
+    justify-content: right;    
+    height: 15px;
+    width:40px;
+
 }
 .fa-search{
     color: #9aa0a6;
 }
 .fa-keyboard, .fa-microphone{
     color: #7b7b7b;
-    margin-right: 10px;
-}
-.fa-times{
-    color: transparent;
     margin-right: 10px;    
+}  
+.botoes{
+    margin-top: 30px;
 }
-#pesquisar:focus + span{
-    color: #7b7b7b;    
+.botoes button{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;    
+    color: #202124;
+    height: 40px;
+    width: 140px;
+    margin: 11px 4px;    
+    font-size: 14px;
+    border-radius: 4px;
+    outline: 0;
+    border-style: none;
+}
+.botoes button:hover{
+    outline: 0;
+    border: 1px solid #dadce0;
+}
+footer{
+    border-top: 1px solid #dadce0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 40px; 
+    width: 100%;           
+    background-color: #f2f2f2;
+}
+footer a{
+    font-size: 1rem;
+    color: #70757a;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .informacoes, footer .legal{
+    align-items: center;
+    display: flex;         
+    width: 350px;
+    justify-content: space-evenly;
+}
+@media (max-width:590px){
+    .campoPesquisa{
+        width: 400px;        
+    }       
+}
+@media (max-width:400px){
+    .campoPesquisa{
+        width: 320px;
+    }
+    footer a{
+        font-size: 0.5rem;
+    }
 }
